@@ -50,35 +50,35 @@ html{background:url(./images/bg.gif) repeat #f5f5f4; height:100%;}
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("Roboto-Light.woff") format("woff");
+  src: url("fonts/Roboto-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("Roboto-Regular.woff") format("woff");
+  src: url("fonts/Roboto-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("MerriweatherSans-Light.woff") format("woff");
+  src: url("fonts/MerriweatherSans-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("MerriweatherSans-Bold.woff") format("woff");
+  src: url("fonts/MerriweatherSans-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("OpenSans.woff") format("woff");
+  src: url("fonts/OpenSans.woff") format("woff");
 }
 
 
