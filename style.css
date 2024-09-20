@@ -24,7 +24,7 @@ html{background:url(./images/bg.gif) repeat #f5f5f4; height:100%;}
 }
 
 
-
+/*
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
@@ -38,6 +38,27 @@ html{background:url(./images/bg.gif) repeat #f5f5f4; height:100%;}
   font-weight: 700;
   src: local("Merriweather Sans Bold"), local("MerriweatherSans-Bold"), url("http://themes.googleusercontent.com/static/fonts/merriweathersans/v2/6LmGj5dOJopQKEkt88GowQfd-b-I5PxxcmB4_-MNcqw.woff") format("woff");
 }
+*/
+
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("MerriweatherSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("MerriweatherSans-Bold.woff") format("woff");
+}
+
+
+
+
+
+
 
 @font-face {
   font-family: "Open Sans";
