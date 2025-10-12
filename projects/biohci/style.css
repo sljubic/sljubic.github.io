@@ -1,0 +1,307 @@
+/* ===GLOBAL STYLES=== */
+
+* { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
+body { line-height: 1.6; color: #333; background-color: #fff; }
+h1,h2,h3{ font-weight:700; }
+a { text-decoration:none; }
+img { max-width:100%; display:block; }
+
+
+
+/* ===HEADER=== */
+
+header { position: relative; padding: 60px 20px 20px 20px; background-color: #003366; border-bottom:2px solid #002855; text-align:center; color:#fff; }
+.eu-funding { position:absolute; top:15px; left:15px; }
+.eu-funding img { width:250px; height:auto; }
+.lang-toggle-top { position:absolute; top:15px; right:15px; }
+.lang-toggle-top button { border:none; background:none; cursor:pointer; margin-left:8px; padding:2px; transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s; }
+.lang-toggle-top button img { display:block; width:24px; height:auto; }
+.header-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Logo + project title alignment */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* space between logo and text */
+  justify-content: center;
+}
+.project-logo {
+  width: 140px;
+  object-fit: contain;
+}
+
+.header-container h1 { font-size:2.5rem; margin:0; text-align: left; }
+.header-container p {
+  font-size: 1.1rem;
+  margin: 5px 0 0 0;
+  padding-left: 2px;
+  color: #fff;
+  text-align: left;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center text with logo */
+}
+
+.title-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1.1; /* tighter vertical spacing */
+}
+
+.title-text p {
+  font-size: 1.2rem;
+  line-height: 1.3;  /* slightly compact text lines */
+  color: #a3c1ff;
+}
+
+.lang-toggle-top button.active,
+.lang-toggle-nav button.active {
+  transform: scale(1.1); 
+  box-shadow: 0 0 8px #fff;
+  opacity: 1;
+}
+
+.lang-toggle-top button:not(.active),
+.lang-toggle-nav button:not(.active) {
+  opacity: 0.6;
+}
+
+
+
+/* ===NAVIGATION=== */
+
+nav {
+  display: flex;
+  background: #0055a5;
+  padding: 8px 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Left spacer ensures centering */
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Center stays truly centered */
+.nav-center {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+   flex: 0 1 auto;
+  flex-wrap: nowrap;
+}
+
+/* Right side (flags + up arrow) */
+.nav-right {
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap; 
+  display: inline-flex;
+  align-items: center;
+}
+
+nav a:hover {
+  color: #a3c1ff;
+}
+
+/* Flags styling */
+.lang-toggle-nav {
+  display: none;
+  gap: 8px;
+}
+
+.lang-toggle-nav button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.lang-toggle-nav img {
+  width: 24px;
+  height: auto;
+}
+
+/* Go-to-top button */
+.nav-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-up svg {
+  stroke: #003366;
+  width: 18px;
+  height: 18px;
+}
+
+.nav-up:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+
+/* ===SECTIONS=== */
+section { padding:50px 20px; max-width:1200px; margin:0 auto; }
+section:nth-of-type(odd){ background-color:#ffffff; }
+section:nth-of-type(even){ background-color:#f2f6fa; }
+section h2{ text-align:center; margin-bottom:15px; font-size:2rem; }
+
+
+
+/* ===TEAM SECTION=== */
+.team-members { display:flex; flex-direction:column; gap:30px; }
+.team-member { display:flex; align-items:center; gap:20px; text-align:left; }
+.team-member img { width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid #002855; flex-shrink:0; }
+.team-member .member-info { display:flex; flex-direction:column; }
+.team-member h3 { font-size:1.1rem; margin-bottom:5px; }
+.team-member p { font-size:0.9rem; color:#555; }
+
+
+
+/* ===ACTIVITIES SECTION=== */
+#activities {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#activities h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.activity-card {
+  background: #f2f6fa;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.activity-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.activity-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.activity-card p {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: left;
+}
+
+
+
+/* ===PUBLICATIONS SECTION=== */
+.publications-list { list-style-type: disc; padding-left:40px; }
+.publications-list li { margin-bottom:10px; }
+
+
+
+/* ===GOALS SECTION=== */
+.goals-list {   list-style: none;   padding-left: 0; }
+.goals-list li { font-size: 1rem; color: #555; margin-bottom: 20px; display: flex; align-items: center; }
+.goal-icon { font-size: 1.5rem; margin-right: 10px; color: #003366; flex-shrink: 0; }
+
+
+
+/* ===CONTACT SECTION=== */
+.contact-info { text-align:center; }
+.contact-info p { margin-bottom:0px; }
+
+
+
+/* ===FOOTER=== */
+footer {
+  position: relative;
+  background-color: #0055a5;
+  padding: 30px 20px;
+  color: #fff;
+  border-top: 2px solid #002855;
+  text-align: center; 
+  width: 100%;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 20px;  
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: auto;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+
+/* ===RESPONSIVE=== */
+@media(max-width:768px){
+  .eu-funding{ position:static; margin-bottom:15px; }
+  .lang-toggle-top{ position:static; text-align:center; margin-bottom:15px; }
+  .team-members{ flex-direction:column; gap:25px; }
+  .team-member{ flex-direction:column; text-align:center; align-items:center; }
+  .team-member img{ margin-bottom:10px; }
+  
+  .footer-logo {
+	position: static;
+    transform: none;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  nav a{ display:block; margin:5px 0; }

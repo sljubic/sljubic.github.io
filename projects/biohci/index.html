@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIOHCI Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<!-- HEADER -->
+<header>
+  <div class="eu-funding">
+    <img src="img/eu_logo_hr.png" alt="EU Funding" id="eu-emblem">
+  </div>
+
+  <div class="lang-toggle-top">
+    <button onclick="setLanguage('hr')" id="lang-hr"><img src="img/flag_hr.svg" alt="HR"></button>
+    <button onclick="setLanguage('en')" id="lang-en"><img src="img/flag_en.svg" alt="EN"></button>
+  </div>
+  
+  <div class="header-container">
+  <div class="logo-title">
+    <img src="img/BIOHCI_logo_v1.png" alt="Project Logo" class="project-logo">
+    <div class="title-text">
+      <h1>
+        <span class="hr">Projekt: BIOHCI</span>
+        <span class="en" style="display:none;">Project: BIOHCI</span>
+      </h1>
+      <p>
+        <span class="hr">Biometrijska autentikacija zasnovana na <br>interakciji čovjeka i računala</span>
+        <span class="en" style="display:none;">Biometric Authentication based on <br>Human-Computer Interaction</span>
+      </p>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+ <div class="nav-left"></div>
+ <div class="nav-center">
+  <a href="#about"><span class="hr">O projektu</span><span class="en" style="display:none;">About</span></a>
+  <a href="#team"><span class="hr">Projektni tim</span><span class="en" style="display:none;">Project Team</span></a>
+  <a href="#activities"><span class="hr">Aktivnosti</span><span class="en" style="display:none;">Activities</span></a>
+  <a href="#goals"><span class="hr">Ciljevi projekta</span><span class="en" style="display:none;">Project Goals</span></a>
+  <a href="#publications"><span class="hr">Publikacije</span><span class="en" style="display:none;">Publications</span></a>
+  <a href="#contact"><span class="hr">Kontakt</span><span class="en" style="display:none;">Contact</span></a>
+ </div>
+ 
+ <div class="nav-right">
+    <div class="lang-toggle-nav">
+      <button onclick="setLanguage('hr')" id="lang-hr-nav"><img src="img/flag_hr.svg" alt="HR"></button>
+      <button onclick="setLanguage('en')" id="lang-en-nav"><img src="img/flag_en.svg" alt="EN"></button>
+    </div>
+    <a href="#top" class="nav-up" title="Back to Top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"/>
+      </svg>
+    </a>
+ </div>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2><span class="hr">O projektu</span><span class="en" style="display:none;">About</span></h2>
+  <p>
+    <span class="hr">
+		Biometrijska autentikacija uobičajeno se oslanja na fizičke karakteristike korisnika poput otiska prsta ili
+		prepoznavanja lica. Međutim, uzorci svakodnevne interakcije čovjeka i računala također nose jedinstvene
+		odrednice ponašanja koje mogu poslužiti kao biometrijski identifikatori. Ovaj projekt istražuje mogućnost
+		prepoznavanja korisnika na temelju njegova načina interakcije s digitalnim sučeljima – uključujući izvođenje
+		standardnih gesti direktnim dodirom ili putem pokaznih naprava. <br><br>
+		Cilj projekta BIOHCI je razviti i vrednovati modele za biometrijsku autentikaciju zasnovanu na obrascima
+		interakcije korisnika s različitim digitalnim platformama, pri čemu se u fokus stavljaju sučelja mobilnih i web
+		aplikacija. Projekt spaja tri ključne discipline: interakciju čovjeka i računala, umjetnu inteligenciju i računalnu
+		sigurnost, a doprinosi razvoju inovativnih metoda autentikacije koje ne zahtijevaju dodatne uređaje i promjenu
+		konteksta niti ometaju korisnički fokus.<br><br>
+		U sklopu istraživanja planira se izrada ispitnih aplikacija te organizacija i provedba eksperimenata sa
+		stvarnim korisnicima. Prikupljat će se svi relevantni podaci o interakciji putem dodirnih zaslona i pokaznih
+		naprava (stilus, prst, miš), uz paralelno dohvaćanje informacija s dostupnih senzora. Prikupljeni podaci
+		koristit će se za razvoj i vrednovanje modela dubokog učenja koji prepoznaju korisnika na temelju specifičnog
+		individualnog načina interakcije. Posebna pažnja posvetit će se mogućnostima integracije ovakvih modela u
+		scenarije višefaktorske autentikacije, s ciljem povećanja sigurnosti pristupa digitalnim uslugama bez
+		kompromitiranja korisničkog iskustva.<br><br>
+		Znanstveni doprinosi projekta BIOHCI odnose se na detaljnu analizu biometrijskog potencijala interakcije
+		čovjeka i računala (za širi spektar ciljanih platformi, uređaja te modaliteta interakcije) te razvoj izvornih
+		pouzdanih modela za prepoznavanje korisnika u navedenom kontekstu.
+	</span>
+    <span class="en" style="display:none;">
+		Biometric authentication is usually based on the physical characteristics of the user, such as fingerprints or
+		facial recognition. However, everyday interaction patterns between humans and computers also contain
+		unique behavioral characteristics that can serve as biometric identifiers. This project explores the possibility
+		of recognizing users based on their interaction with digital interfaces, including the execution of standard
+		gestures through direct touch or pointing devices.<br><br>
+		The aim of the BIOHCI project is to develop and evaluate biometric authentication models based on user
+		interaction patterns on different digital platforms, with a focus on mobile and web application interfaces. The
+		project integrates three key disciplines: human-computer interaction, artificial intelligence, and cybersecurity.
+		It contributes to the development of innovative authentication methods that do not require additional devices
+		or context switching and that do not disrupt the user's focus.<br><br>
+		Research includes developing experimental applications and conducting user studies. Relevant interaction
+		data is collected via touchscreens and pointing devices (stylus, finger, mouse) as well as via available
+		sensors. These collected datasets are used to train and evaluate deep learning models that are able to
+		recognize users based on their individual interaction styles. Particular attention will be paid to the possibility
+		of integrating such models into multi-factor authentication scenarios to improve digital security without
+		compromising the user experience.<br><br>
+		The scientific contributions of the BIOHCI project include a comprehensive analysis of the biometric potential
+		of human-computer interaction (across a wider range of platforms, devices, and interaction modalities) and
+		the development of novel and reliable models for user recognition in this context.
+	</span>
+  </p>
+</section>
+
+<!-- TEAM SECTION -->
+<section id="team">
+  <h2><span class="hr">Projektni tim</span><span class="en" style="display:none;">Project Team</span></h2>
+  <div class="team-members">
+    <div class="team-member">
+      <img src="img/member-ljubic.jpg" alt="Sandi Ljubić">
+      <div class="member-info">
+        <h3><span class="hr">Sandi Ljubić</span><span class="en" style="display:none;">Sandi Ljubic</span></h3>
+        <p>
+		<span class="hr">
+			Prof. dr. sc. Sandi Ljubić, voditelj projekta, ima bogato iskustvo u području HCI. U svom znanstvenostručnom
+			radu, većinom se fokusira na empirijski pristup području interakcije čovjeka i računala, s posebnim
+			naglaskom na domenu mobilnih aplikacija, metode unosa teksta, korištenje senzora za obogaćivanje
+			interakcije, prediktivno modeliranje i vrednovanje interaktivnih sustava te inženjerstvo upotrebljivosti. U ulozi
+			voditelja projekta, organizira, nadgleda i sudjeluje u svim fazama i aktivnostima projekta.
+		</span>
+		<span class="en" style="display:none;">
+			Prof. Sandi Ljubic, PhD, project leader, has extensive experience in the field of HCI. In his scientific and professional work, he primarily focuses on an empirical approach to human-computer interaction, with particular emphasis on mobile applications, text input methods, the use of sensors for interaction enrichment, predictive modeling, evaluation of interactive systems, and usability engineering. As project leader, he organizes, supervises, and participates in all phases and activities of the project.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+	<div class="team-member">
+      <img src="img/member-salkanovic.jpg" alt="Alen Salkanović">
+      <div class="member-info">
+        <h3><span class="hr">Alen Salkanović</span><span class="en" style="display:none;">Alen Salkanovic</span></h3>
+        <p>
+		<span class="hr">
+			Dr. sc. Alen Salkanović je poslijedoktorand koji istražuje područje interakcije čovjeka i računala, s
+			posebnim osvrtom na mobilnu domenu i ulogu osjetila u augmentaciji interakcije s mobilnim uređajima.
+			Njegov doktorski rad bavi se biometrijskim odrednicama potpisa i rukopisa koji se izvode na zaslonima
+			osjetljivima na dodir, pri čemu podatke prikuplja izvornim apparatusom zasnovanim na fuziji senzora. S
+			obzirom na stečeno iskustvo tijekom rada na doktoratu, radi na implementaciji eksperimentalnog postava,
+			organizaciji i provedbi eksperimenata te razvoju prototipnog sustava autentikacije, a involviran je i u
+			suradni razvoj i vrednovanje modela za prepoznavanje korisnika.
+		</span>
+		<span class="en" style="display:none;">
+			Alen Salkanovic, PhD, is a postdoctoral fellow researching HCI, with a special focus on the mobile domain and the role of sensors in augmenting interaction with mobile devices. His doctoral thesis addresses the biometric determinants of signatures and handwriting performed on touch-sensitive screens, collecting data with an original apparatus based on sensor fusion. Building on experience gained during his doctoral work, he is implementing the experimental setup, organizing and conducting experiments, developing a prototype authentication system, and participating in the collaborative development and evaluation of user recognition models.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+	<div class="team-member">
+      <img src="img/member-batistic.jpg" alt="Luka Batistić">
+      <div class="member-info">
+        <h3><span class="hr">Luka Batistić</span><span class="en" style="display:none;">Luka Batistic</span></h3>
+        <p>
+		<span class="hr">
+			Dr. sc. Luka Batistić doktorirao je na istraživanju primjene strojnog učenja i umjetne inteligencije u
+			području interakcije čovjeka i računala, konkretno na temi sučelja mozak-računalo. S obzirom na svoje
+			iskustvo u provođenju empirijskih istraživanja u području HCI, analizi vremenskih signala te primjeni metoda
+			AI, involviran je i u pripremi eksperimenata za prikupljanje podataka i u fazi suradnog razvoja i
+			vrednovanja modela dubokog učenja za prepoznavanje korisnika.
+		</span>
+		<span class="en" style="display:none;">
+			Luka Batistic, PhD, earned his doctorate for research on applying machine learning and artificial intelligence in human-computer interaction, with a specific focus on brain-computer interfaces. With experience in empirical research in HCI, time signal analysis, and AI methods, he prepares experiments for data collection and collaborates on developing and evaluating deep learning models for user recognition.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+    <div class="team-member">
+      <img src="img/member-susanj.jpg" alt="Diego Sušanj">
+      <div class="member-info">
+        <h3><span class="hr">Diego Sušanj</span><span class="en" style="display:none;">Diego Susanj</span></h3>
+        <p>
+		<span class="hr">
+			Izv. prof. dr. sc. Diego Sušanj radi na Tehničkom fakultetu Sveučilišta Jurja Dobrile u Puli, a njegovi
+			istraživački interesi uključuju biometrijske sustave, strojno učenje, analizu podataka, distribuirane algoritme i
+			enkripciju. Stoga, involviran je u aktivnostima koje se odnose na analizu podatkovnih skupova,
+			predobradu podataka, te razvoj i vrednovanje modela dubokog učenja.
+		</span>
+		<span class="en" style="display:none;">
+			Assoc. Prof. Diego Susanj, PhD, works at the Faculty of Engineering at Juraj Dobrila University in Pula. His research interests include biometric systems, machine learning, data analysis, distributed algorithms, and encryption. He is involved in activities related to dataset analysis, data preprocessing, and the development and evaluation of deep learning models.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+    <div class="team-member">
+      <img src="img/member-emersic.jpg" alt="Žiga Emeršič">
+      <div class="member-info">
+        <h3><span class="hr">Žiga Emeršič</span><span class="en" style="display:none;">Ziga Emersic</span></h3>
+        <p>
+		<span class="hr">
+			Doc. dr. sc. Žiga Emeršič, s Fakulteta za računarstvo i informatiku Sveučilišta u Ljubljani, renomirani je stručnjak u području biometrije s velikim iskustvom korištenja
+			tehnika strojnog / dubokog učenja u tom području. S obzirom na svoju ekspertizu, posebno je aktivan u
+			fazi predlaganja, testiranja i vrednovanja različitih arhitektura neuronskih mreža i ostalih metoda u postupku
+			razvoja modela za prepoznavanje korisnika.
+		</span>
+		<span class="en" style="display:none;">
+			Asst. Prof. Ziga Emersic, PhD, from the Faculty of Computer and Information Science at the University of Ljubljana, is a renowned expert in biometrics with extensive experience in applying machine and deep learning techniques in this field. Given his expertise, he is particularly active in proposing, testing, and evaluating various neural network architectures and other methods during the development of models for user recognition.
+		</span>
+		</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ACTIVITIES SECTION -->
+<section id="activities">
+  <h2><span class="hr">Aktivnosti</span><span class="en" style="display:none;">Activities</span></h2>
+  <div class="activities-grid">
+    <div class="activity-card">
+      <div class="activity-icon">🖥️👥</div>
+      <h3><span class="hr">Eksperimentalni postav i prikupljanje podataka</span><span class="en" style="display:none;">Experimental setup and data collection</span></h3>
+      <p>
+        <span class="hr">Razvoj aplikacija za mobilne, web i desktop platforme te prikupljanje podataka
+        kroz kontrolirane eksperimente s korisnicima. Praćenje biometrijski relevantnih
+        obrazaca interakcije (geste, pritisak, brzina, dinamika,...).</span>
+        <span class="en" style="display:none;">Development of applications for mobile, web, and desktop platforms, as well as data collection through controlled user experiments. Tracking of biometrically relevant interaction patterns, including gestures, pressure, speed, and dynamics.</span>
+      </p>
+    </div>
+    <div class="activity-card">
+      <div class="activity-icon">📊</div>
+      <h3><span class="hr">Analiza podataka i ekstrakcija značajki</span><span class="en" style="display:none;">Data analysis and feature extraction</span></h3>
+      <p>
+        <span class="hr">Vizualizacija ciljanih zapisa iz podatkovnog skupa, čišćenje i segmentacija podataka, ekstrakcija značajki relevantnih za
+        identifikaciju korisnika.</span>
+        <span class="en" style="display:none;">Visualization of target records from the dataset, data cleaning and segmentation, and extraction of features relevant to user identification.</span>
+      </p>
+    </div>
+    <div class="activity-card">
+      <div class="activity-icon">🤖</div>
+      <h3><span class="hr">Razvoj i vrednovanje modela dubokog učenja</span><span class="en" style="display:none;">Development and evaluation of deep learning models</span></h3>
+      <p>
+        <span class="hr">Trening i evaluacija modela (zasnovanih na algoritmima dubokog učenja) za prepoznavanje korisnika prema
+        obrascima interakcije.</span>
+        <span class="en" style="display:none;">Training and evaluation of models using deep learning algorithms for user recognition based on interaction patterns.</span>
+      </p>
+    </div>
+    <div class="activity-card">
+      <div class="activity-icon">🔐</div>
+      <h3><span class="hr">Prototipna integracija višefaktorske autentikacije</span><span class="en" style="display:none;">Prototype integration of multi-factor authentication</span></h3>
+      <p>
+        <span class="hr">Implementacija i testiranje modela u funkcionalnom prototipu višefaktorskog autentikacijskog sustava
+        bez promjene konteksta i ometanja fokusa.</span>
+        <span class="en" style="display:none;">Implementation and testing of the model in the functional prototype of the multi-factor authentication system without altering the context or diverting the focus.
+		</span></span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- GOALS SECTION -->
+<section id="goals">
+  <h2><span class="hr">Ciljevi</span><span class="en" style="display:none;">Goals</span></h2>
+  <ul class="goals-list">
+    <li><span class="goal-icon">📊</span> 
+	<span class="hr">Generirati izvorne podatkovne skupove provođenjem kontroliranih eksperimenata za dohvaćanje biometrijskih odrednica interakcije čovjeka i računala</span>
+        <span class="en" style="display:none;">Generate original datasets through controlled experiments to capture biometric determinants of human-computer interaction</span></li>
+
+    <li><span class="goal-icon">🤖</span> <span class="hr">Razviti i vrednovati modele dubokog učenja za prepoznavanje korisnika temeljem uzoraka interakcije na različitim uređajima</span>
+        <span class="en" style="display:none;">Develop and evaluate deep learning models to recognize users based on interaction patterns across different devices</span></li>
+
+    <li><span class="goal-icon">🔐</span> <span class="hr">Integrirati i testirati razvijene modele u prototipnom sustavu višefaktorske autentikacije</span>
+        <span class="en" style="display:none;">Integrate and test developed models in a prototype multi-factor authentication system</span></li>
+
+    <li><span class="goal-icon">📢</span> <span class="hr">Diseminacija rezultata istraživanja (znanstveni časopisi i skupovi) te formiranje novih znanstveno-istraživačkih inicijativa</span>
+        <span class="en" style="display:none;">Dissemination of research results (journals and conferences) and formation of new research initiatives</span></li>
+  </ul>
+</section>
+
+<!-- PUBLICATIONS SECTION -->
+<section id="publications">
+  <h2><span class="hr">Publikacije</span><span class="en" style="display:none;">Publications</span></h2>
+  <ul class="publications-list">
+    <li>TBA</li>
+  </ul>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2><span class="hr">Kontakt</span><span class="en" style="display:none;">Contact</span></h2>
+  <div class="contact-info">
+    <p><span class="hr">Email: sandi.ljubic <i>at</i> riteh <i>dot</i> uniri <i>dot</i> hr </span>
+       <span class="en" style="display:none;">Email: sandi.ljubic <i>at</i> riteh <i>dot</i> uniri <i>dot</i> hr</span></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="img/UNIRI_logo.png" alt="University Logo" class="footer-logo">
+  <p class="footer-text">
+    <span class="hr">&copy; Projekt BIOHCI, projektna linija UNIRI PU, 2025&ndash;2029</span>
+    <span class="en" style="display:none;">&copy; BIOHCI Project, project line UNIRI PU, 2025&ndash;2029</span>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
