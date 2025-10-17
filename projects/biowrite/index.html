@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIOWRITE Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<!-- HEADER -->
+<header>
+  <div class="uniri-logo-left">
+    <img src="img/uniri_logo.svg" alt="UNIRI Logo" class="uniri-logo">
+    <img src="img/uniri_emblem.svg" alt="UNIRI Emblem" class="uniri-emblem">
+  </div>
+
+  <div class="lang-toggle-top">
+    <button onclick="setLanguage('hr')" id="lang-hr"><img src="img/flag_hr.svg" alt="HR"></button>
+    <button onclick="setLanguage('en')" id="lang-en"><img src="img/flag_en.svg" alt="EN"></button>
+  </div>
+  
+  <div class="header-container">
+  <div class="logo-title">
+    <img src="img/project_logo.png" alt="Project Logo" class="project-logo">
+    <div class="title-text">
+      <p>
+        <span class="hr">Analiza biometrijskih značajki rukopisa i potpisa <br>na dodirnom zaslonu zasnovana na fuziji osjetila</span>
+        <span class="en" style="display:none;">Sensor-fusion-based Analysis of Biometric Features <br>of Touchscreen Handwriting and Signatures</span>
+      </p>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+<!-- NAVIGATION -->
+<nav>
+ <div class="nav-left"></div>
+ <div class="nav-center">
+  <a href="#about"><span class="hr">O projektu</span><span class="en" style="display:none;">About</span></a>
+  <a href="#team"><span class="hr">Projektni tim</span><span class="en" style="display:none;">Project Team</span></a>
+  <a href="#activities"><span class="hr">Aktivnosti</span><span class="en" style="display:none;">Activities</span></a>
+  <a href="#goals"><span class="hr">Ciljevi projekta</span><span class="en" style="display:none;">Project Goals</span></a>
+  <a href="#publications"><span class="hr">Publikacije</span><span class="en" style="display:none;">Publications</span></a>
+  <a href="#contact"><span class="hr">Kontakt</span><span class="en" style="display:none;">Contact</span></a>
+ </div>
+ 
+ <div class="nav-right">
+    <div class="lang-toggle-nav">
+      <button onclick="setLanguage('hr')" id="lang-hr-nav"><img src="img/flag_hr.svg" alt="HR"></button>
+      <button onclick="setLanguage('en')" id="lang-en-nav"><img src="img/flag_en.svg" alt="EN"></button>
+    </div>
+    <a href="#top" class="nav-up" title="Back to Top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"/>
+      </svg>
+    </a>
+ </div>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2><span class="hr">O projektu</span><span class="en" style="display:none;">About</span></h2>
+  <p>
+    <img src="img/about.jpg" alt="Abstract project image" class="about-image-left">
+  
+		<span class="hr">
+		U kontekstu autentikacije korisnika, unatoč značajnom tehnološkom napretku, vlastoručni
+		potpis se još uvijek često koristi za identifikaciju pojedinaca. Postoje dvije kategorije
+		prepoznavanja potpisa i rukopisa: statička (offline) i dinamička (online). Dok prva uključuje
+		prepoznavanje rukom pisanoga sadržaja dobivenog iz slike, druga najčešće analizira
+		rukopis izveden interakcijom na uređaju s dodirnim zaslonom. Za razliku od statičkog
+		pristupa, koji se oslanja isključivo na slikovni prikaz potpisa, dinamička metoda uzima u
+		obzir dodatne podatke kao što su brzina pisanja, položaj olovke, redoslijed poteza i razina
+		pritiska na podlogu. <br><br>
+		Jedan od ciljeva ovog projekta je razviti eksperimentalni postav za prikupljanje rukom
+		pisanih uzoraka. Biometrijski podaci prikupljaju se pomoću uređaja s dodirnim zaslonom s
+		različitim integriranim i eksternim osjetilima. Predloženo rješenje zasnovano je na konceptu
+		fuzije osjetila, budući da se uz osnovni senzor dodira dodatno koriste magnetometar,
+		akcelerometar, žiroskop, kamera i piezoelektrični kontaktni mikrofoni. Takav sustav može
+		prikupljati sveobuhvatne podatke koji se odnose na detaljnu anatomiju dodirnih gesti,
+		pritisak pokazne naprave, trajektoriju položaja olovke, promjene u ambijentalnom
+		magnetskom polju i slično.<br><br>
+		Prikupljanje podataka u opisanom postavu provest će se kontroliranim eksperimentom sa
+		stvarnim korisnicima, dohvaćanjem rukom pisanih izraza, riječi, pojedinačnih slova i uzoraka
+		potpisa kako bi se obogatio ciljani skup podataka.<br><br>
+		Rezultantni podatkovni skup predstavlja okosnicu za daljnju analizu. U ovoj fazi istraživanja
+		predviđa se razvoj programskog alata za vizualizaciju različitih aspekata potpisa i rukopisa,
+		kao i korištenje tehnika strojnog (dubokog) učenja za identifikaciju korisnika na temelju gore
+		navedenih biometrijskih značajki. U tom kontekstu, kao poseban izazov ističe se pronalazak
+		takvog podskupa osjetila koji omogućava i jednostavno korištenje i učinkovitu/točnu
+		identifikaciju korisnika.
+		</span>
+		<span class="en" style="display:none;">
+		In the context of user authentication, despite significant technological advances, handwritten
+		signature analysis is still widely used to identify individuals. There are two distinct categories
+		of handwriting recognition: offline and online. While the former involves identifying and
+		interpreting handwritten content obtained from an image, the latter involves recognizing
+		handwriting derived from interaction with a touchscreen device. Unlike the offline strategy,
+		which relies solely on an image-based representation of the signature, the online method
+		considers additional data such as velocity, acceleration, pen position, stroke sequence, and
+		pressure over time.<br><br>
+		One of the goals of this project is to develop an experimental apparatus for capturing
+		handwritten patterns. The biometric data is collected using a touchscreen device with
+		various integrated and external sensors. The proposed apparatus is based on the sensor
+		fusion concept, as a magnetometer, accelerometer, gyroscope, camera, and piezoelectric
+		contact microphones are used in addition to the actual touch sensor. Such a system can
+		collect comprehensive data related to the detailed anatomy of touch gestures, pointing
+		device pressure, pen position trajectory, changes in the surrounding magnetic field, and the
+		like.<br><br>
+		Data acquisition with the described apparatus will be conducted in a controlled experiment
+		with real users, capturing handwritten phrases, words, individual letters, and signature
+		samples to expand the target dataset.<br><br>
+		The resulting dataset will eventually form the backbone for further analysis. This phase of
+		the research includes the development of a software tool to visualize various aspects of
+		signatures and handwriting, as well as using machine (deep) learning techniques for user
+		identification based on the aforementioned biometric features. In this context, finding such a 
+		subset of sensors that enables both ease of use and effective/accurate user identification is
+		a particular challenge.
+		</span>
+	</p>
+</section>
+
+<!-- TEAM SECTION -->
+<section id="team">
+  <h2><span class="hr">Projektni tim</span><span class="en" style="display:none;">Project Team</span></h2>
+  <div class="team-members">
+    <div class="team-member">
+      <img src="img/member-ljubic.jpg" alt="Sandi Ljubić">
+      <div class="member-info">
+        <h3><span class="hr">Sandi Ljubić</span><span class="en" style="display:none;">Sandi Ljubic</span></h3>
+        <p>
+		<span class="hr">
+			Prof. dr. sc. Sandi Ljubić, voditelj projekta, ima bogato iskustvo u području HCI. U svom znanstvenostručnom
+			radu, većinom se fokusira na empirijski pristup području interakcije čovjeka i računala, s posebnim
+			naglaskom na domenu mobilnih aplikacija, metode unosa teksta, korištenje senzora za obogaćivanje
+			interakcije, prediktivno modeliranje i vrednovanje interaktivnih sustava te inženjerstvo upotrebljivosti. U ulozi
+			voditelja projekta, organizira, nadgleda i sudjeluje u svim fazama i aktivnostima projekta.
+		</span>
+		<span class="en" style="display:none;">
+			Prof. Sandi Ljubic, PhD, project leader, has extensive experience in the field of HCI. In his scientific and professional work, he primarily focuses on an empirical approach to human-computer interaction, with particular emphasis on mobile applications, text input methods, the use of sensors for interaction enrichment, predictive modeling, evaluation of interactive systems, and usability engineering. As project leader, he organizes, supervises, and participates in all phases and activities of the project.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+	<div class="team-member">
+      <img src="img/member-salkanovic.jpg" alt="Alen Salkanović">
+      <div class="member-info">
+        <h3><span class="hr">Alen Salkanović</span><span class="en" style="display:none;">Alen Salkanovic</span></h3>
+        <p>
+		<span class="hr">
+			Alen Salkanović je doktorand koji istražuje područje interakcije čovjeka i računala, s
+			posebnim osvrtom na mobilnu domenu i ulogu osjetila u augmentaciji interakcije s mobilnim uređajima.
+			Njegov doktorski rad u skladu je s ciljevima projekta, a bavi se biometrijskim odrednicama potpisa i 
+			rukopisa koji se izvode na zaslonima osjetljivima na dodir. Radi na implementaciji eksperimentalnog postava s fuzijom senzora,
+			organizaciji i provedbi eksperimenata te razvoju i vrednovanju DL modela za prepoznavanje korisnika.
+		</span>
+		<span class="en" style="display:none;">
+			Alen Salkanovic is a PhD student researching HCI, with a special focus on the mobile domain and the role of sensors in augmenting interaction with mobile devices. His doctoral thesis aligns with the project's goals and addresses biometric determinants of signatures and handwriting on touchscreens. He is implementing an experimental setup with sensor fusion, organizing and conducting experiments, and developing and validating deep learning models for user recognition.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+	<div class="team-member">
+      <img src="img/member-batistic.jpg" alt="Luka Batistić">
+      <div class="member-info">
+        <h3><span class="hr">Luka Batistić</span><span class="en" style="display:none;">Luka Batistic</span></h3>
+        <p>
+		<span class="hr">
+			Dr. sc. Luka Batistić doktorirao je na istraživanju primjene strojnog učenja i umjetne inteligencije u
+			području interakcije čovjeka i računala, konkretno na temi sučelja mozak-računalo. S obzirom na svoje
+			iskustvo u provođenju empirijskih istraživanja u području HCI, analizi vremenskih signala te primjeni metoda
+			AI, involviran je i u pripremi eksperimenata za prikupljanje podataka i u fazi suradnog razvoja i
+			vrednovanja modela dubokog učenja za prepoznavanje korisnika.
+		</span>
+		<span class="en" style="display:none;">
+			Luka Batistic, PhD, earned his doctorate for research on applying machine learning and artificial intelligence in human-computer interaction, with a specific focus on brain-computer interfaces. With experience in empirical research in HCI, time signal analysis, and AI methods, he prepares experiments for data collection and collaborates on developing and evaluating deep learning models for user recognition.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+    <div class="team-member">
+      <img src="img/member-stajduhar.jpg" alt="Ivan Štajduhar">
+      <div class="member-info">
+        <h3><span class="hr">Ivan Štajduhar</span><span class="en" style="display:none;">Ivan Štajduhar</span></h3>
+        <p>
+		<span class="hr">
+			Prof. dr. sc. Ivan Štajduhar vodi Laboratorij za umjetnu inteligenciju i ima bogato iskustvu u teoretskom i prkatičnom radu s modelima stronog i dubokog učenja. Njegovo istraživačko područje primarno obuhvaća primjenu AI metoda u biomedicinskim podacima / slikama. On savjetovatuje projektni tim u odabiru arhitektura neuronskih mreža, metodama validacije te interpretaciji rezultata. Njegova uloga posebno je važna u potvrđivanju znanstvene rigoroznosti i pouzdanosti rezultata.
+		</span>
+		<span class="en" style="display:none;">
+			Prof. Ivan Štajduhar, PhD, leads the AI Lab and has extensive experience in both theoretical and practical work with machine and deep learning models. His research primarily focuses on applying AI methods to biomedical data and images. He advises the project team on selecting neural network architectures, validation methods, and interpreting results. His role is especially important in ensuring the scientific rigor and reliability of the results.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+	<div class="team-member">
+      <img src="img/member-poscic.jpg" alt="Ana Pošćić">
+      <div class="member-info">
+        <h3><span class="hr">Ana Pošćić</span><span class="en" style="display:none;">Ana Pošćić</span></h3>
+        <p>
+		<span class="hr">
+			Prof. dr. sc. Ana Pošćić je profesorica i predstojnica Katedre za europsko javno pravo na Sveučilištu u Rijeci. Njezin rad povezuje pravo EU tržišnog natjecanja s novim područjima poput umjetne inteligencije i održivosti, adresirajući regulatorne izazove na digitalnim tržištima. Sudjeluje kao savjetnica za pravne i etičke aspekte istraživanja, osobito u dijelu koji se odnosi na zaštitu biometrijskih podataka te pristanke sudionika za sudjelovanje u eksperimentu.
+		</span>
+		<span class="en" style="display:none;">
+			Prof. Ana Pošćić, PhD, is a Professor and Head of the Department of European Public Law at the University of Rijeka. Her work links EU Competition Law with emerging fields such as AI and sustainability, addressing regulatory challenges in digital markets. She advises on legal and ethical aspects of research, especially regarding the protection of biometric data and obtaining participant consent for experiments.
+		</span>
+		</p>
+      </div>
+    </div>
+	
+    <div class="team-member">
+      <img src="img/member-emersic.jpg" alt="Žiga Emeršič">
+      <div class="member-info">
+        <h3><span class="hr">Žiga Emeršič</span><span class="en" style="display:none;">Ziga Emersic</span></h3>
+        <p>
+		<span class="hr">
+			Doc. dr. sc. Žiga Emeršič, s Fakulteta za računarstvo i informatiku Sveučilišta u Ljubljani, renomirani je stručnjak u području biometrije s velikim iskustvom korištenja
+			tehnika strojnog / dubokog učenja u tom području. S obzirom na svoju ekspertizu, posebno je aktivan u
+			fazi predlaganja, testiranja i vrednovanja različitih arhitektura neuronskih mreža i ostalih metoda u postupku
+			razvoja modela za prepoznavanje korisnika zasnovano na potpisu i rukopisu.
+		</span>
+		<span class="en" style="display:none;">
+			Asst. Prof. Ziga Emersic, PhD, from the Faculty of Computer and Information Science at the University of Ljubljana, is a renowned expert in biometrics with extensive experience in applying machine and deep learning techniques in this field. Given his expertise, he is particularly active in proposing, testing, and evaluating various neural network architectures and other methods during the development of models for user recognition based on signatures and handwriting.
+		</span>
+		</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ACTIVITIES SECTION -->
+<section id="activities">
+  <h2><span class="hr">Aktivnosti</span><span class="en" style="display:none;">Activities</span></h2>
+  <div class="activities-grid">
+    <div class="activity-card">
+      <div class="activity-icon">📡️🧩️</div>
+      <h3><span class="hr">Apparatus s fuzijom senzora</span><span class="en" style="display:none;">Sensor fusion apparatus</span></h3>
+      <p>
+        <span class="hr">Razvoj eksperimentalnog postava za prikupljanje uzoraka pisanja na dodirnom zaslonu. Obuhvaća odabir uređaja, senzora i dodatnog sklopovlja te razvoj programske potpore za prikupljanje relevantnih podataka. Posebna pažnja usmjerava se na koncept fuzije osjetila i ispravnu integraciju svih komponenti.</span>
+        <span class="en" style="display:none;">Development of an experimental setup for collecting writing samples on a touchscreen, including the selection of devices, sensors, and additional hardware, as well as the developing of software to support the collection of relevant data. Special attention is given to sensor fusion and the correct integration of all components.</span>
+      </p>
+    </div>
+    <div class="activity-card">
+      <div class="activity-icon">👥✍️</div>
+      <h3><span class="hr">Organizacija i provedba eksperimenta</span><span class="en" style="display:none;">Organization and implementation of the experiment</span></h3>
+      <p>
+        <span class="hr">Provođenje kontroliranog eksperimenta s najmanje 50 korisnika, u kojem ispitanici izvode zadatke repetitivnog potpisivanja i pisanja slova, riječi i kratkih fraza. Podaci se prate i bilježe pomoću različitih senzora.</span>
+        <span class="en" style="display:none;">Conducting a controlled experiment with at least 50 users, in which subjects perform repetitive signing and writing tasks involving letters, words, and short phrases. Data is monitored and recorded using various sensors.</span>
+      </p>
+    </div>
+    <div class="activity-card">
+      <div class="activity-icon">📈🔍</div>
+      <h3><span class="hr">Vizualizacija i analiza dinamičkih aspekata potpisa i rukopisa</span><span class="en" style="display:none;">Visualization and analysis of dynamic aspects of signatures and handwriting</span></h3>
+      <p>
+        <span class="hr">Prikaz različitih aspekata podatkovnih zapisa poput restauriranih slika rukopisa, grafova vremenskih nizova te trajektorija vektora. Komparativna analiza uzoraka pisanja: traženje sličnosti i razlika između uzoraka različitih korisnika ili između više inačica uzoraka istog korisnika.</span>
+        <span class="en" style="display:none;">Display of various aspects of data records, such as restored handwriting images, time series graphs, and vector trajectories. Comparative analysis of writing data involves identifying similarities and differences between patterns from different users or between multiple instances of patterns from the same user.</span>
+      </p>
+    </div>
+    <div class="activity-card">
+      <div class="activity-icon">✍️🤖</div>
+      <h3><span class="hr">Modeli dubokog učenja za raspoznavanje korisnika</span><span class="en" style="display:none;">Deep Learning models for user recognition</span></h3>
+      <p>
+        <span class="hr">Razvoj i vrednovanje modela dubokog učenja za identifikaciju korisnika zasnovanu na uzorcima pisanja. Ispitivanje utjecaja pojedinih senzora na točnost identifikacije.</span>
+        <span class="en" style="display:none;">Development and evaluation of a deep learning model for user identification based on writing patterns. Examination of the influence of individual sensors on identification accuracy.
+		</span></span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- GOALS SECTION -->
+<section id="goals">
+  <h2><span class="hr">Ciljevi projekta</span><span class="en" style="display:none;">Project Goals</span></h2>
+  <ul class="goals-list">
+    <li><span class="goal-icon">🧩</span> 
+	<span class="hr">Osmisliti i razviti apparatus za prikupljanje uzoraka pisanja na dodirnom zaslonu, uz dohvaćanje biometrijskih značajki putem fuzije osjetila</span>
+        <span class="en" style="display:none;">Design and develop an apparatus that collects writing samples on a touchscreen and simultaneously retrieves biometric features using sensor fusion</span></li>
+
+    <li><span class="goal-icon">✍️</span> <span class="hr">Provesti kontrolirani eksperiment s 50+ korisnika i generirati odgovarajući podatkovni skup</span>
+        <span class="en" style="display:none;">Conduct a controlled experiment with more than 50 users and generate the corresponding dataset</span></li>
+
+    <li><span class="goal-icon">🤖</span> <span class="hr">Razviti sustav za vizualizaciju biometrijskih značajki, kao i modele dubokog učenja za identifikaciju korisnika na temelju istih</span>
+        <span class="en" style="display:none;">Develop a system to visualize biometric features and deep learning models for user identification using these features</span></li>
+
+    <li><span class="goal-icon">📢</span> <span class="hr">Diseminacija rezultata istraživanja (znanstveni časopisi i skupovi) te formiranje novih znanstveno-istraživačkih inicijativa</span>
+        <span class="en" style="display:none;">Dissemination of research results (journals and conferences) and formation of new research initiatives</span></li>
+  </ul>
+</section>
+
+<!-- PUBLICATIONS SECTION -->
+<section id="publications">
+  <h2><span class="hr">Publikacije</span><span class="en" style="display:none;">Publications</span></h2>
+  <ul class="publications-list">
+    <li>A. Salkanovic, D. Bacnar, D. Susanj, S. Ljubic: <i>A Sensor-Fusion-Based Experimental Apparatus for Collecting Touchscreen Handwriting Biometric Features</i>. Applied Sciences 2024, 14(23), 11234, pp. 1&ndash;30. <a href="https://doi.org/10.3390/app142311234" target="_blank">[<u>doi</u>]</a> </li>
+	
+	<li>A. Salkanovic, D. Susanj, L. Batistic, S. Ljubic: <i>Beyond Signatures: Leveraging Sensor Fusion for Contextual Handwriting Recognition</i>. Sensors 2025, 25(7), 2290, pp. 1&ndash;29. <a href="https://doi.org/10.3390/s25072290" target="_blank">[<u>doi</u>]</a> </li>
+	
+	<li>A. Salkanovic: <i>A Deep Learning Model for Touchscreen Handwriting Recognition Based on a Sensor Fusion Approach</i>. Doctoral Dissertation, University of Rijeka, Faculty of Engineering, 2025. <a href="https://urn.nsk.hr/urn:nbn:hr:190:161845" target="_blank">[<u>url</u>]</a> </li>
+	
+	<li>L. Batistic, S. Ljubic, K. Griparic, D. Susanj: <i>Comparison of Image-Based Deep Learning Classification Models for Motor Imagery EEG Signals</i>. In: Proc. 2025 MIPRO 48th ICT and Electronics Convention. MIPRO, Rijeka/Opatija, Croatia, 2025, pp. 174&ndash;179. <a href="https://doi.org/10.1109/MIPRO65660.2025.11131782" target="_blank">[<u>doi</u>]</a> </li>
+	
+	<li>L. Skrlj, A. Andrijasevic, M. Culina, S. Ljubic: <i>TINRELIEF: Mobile Application for Tinnitus Sound Therapy</i>. In: Proc. 4th International Conference on Innovations in Computing Research (ICR'25), Lecture Notes in Networks and Systems 1487 (2025), pp. 408&ndash;419. <a href="https://doi.org/10.1007/978-3-031-95652-2_35" target="_blank">[<u>doi</u>]</a> </li>
+	
+	<li>L. Krbavcic: <i>Person recognition based on classification of a written input data</i>. Bachelor Thesis, University of Rijeka, Faculty of Engineering, 2025. 
+	<a href="https://urn.nsk.hr/urn:nbn:hr:190:790952" target="_blank">[<u>url</u>]</a> </li>
+	
+	<li>M. Frankic: <i>User Recognition Based on Touchscreen Drawing Patterns</i>. Master Thesis, University of Rijeka, Faculty of Engineering, 2025. 
+	<a href="https://urn.nsk.hr/urn:nbn:hr:190:441109" target="_blank">[<u>url</u>]</a> </li>
+  </ul>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2><span class="hr">Kontakt</span><span class="en" style="display:none;">Contact</span></h2>
+  <div class="contact-info">
+    <p><span class="hr">Email: sandi.ljubic <i>at</i> riteh <i>dot</i> uniri <i>dot</i> hr </span>
+       <span class="en" style="display:none;">Email: sandi.ljubic <i>at</i> riteh <i>dot</i> uniri <i>dot</i> hr</span></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+   <div class="footer-logo-wrapper">
+    <img src="img/uniri_logo.svg" alt="University Logo" class="footer-logo">
+    <img src="img/uniri_emblem.svg" alt="University  Emblem" class="footer-emblem">
+  </div>
+  <p class="footer-text">
+    <span class="hr">&copy; Projektna linija UNIRI 2023, uniri-iskusni-tehnic-23-120, 2024&ndash;2025</span>
+    <span class="en" style="display:none;">&copy; Project line UNIRI 2023, uniri-iskusni-tehnic-23-120, 2024&ndash;2025</span>
+  </p>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
