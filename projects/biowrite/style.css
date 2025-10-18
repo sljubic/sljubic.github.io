@@ -330,7 +330,7 @@ header {
     align-items: center;       /* vertically center title relative to logo */
     gap: 10px;
     width: 100%;
-    padding: 5px 10px 20px 10px;           /* add 10px space on left and right */
+    padding: 10px 10px 15px 10px;           /* add 10px space on left and right */
     box-sizing: border-box;    /* include padding in width calculation */
   }
   
@@ -348,7 +348,7 @@ header {
 
   .title-text p {
     margin: 0;
-    font-size: 1.3rem;         /* smaller font for mobile */
+    font-size: 1.2rem;         /* smaller font for mobile */
     line-height: 1.1;
     text-align: left;
     word-break: break-word;     /* allow wrapping */
@@ -359,13 +359,6 @@ header {
   .title-text br {
     display: none;          /* remove desktop <br> */
   }
-  
-  
-  
-  
-  
-
- 
 
   
 
@@ -377,7 +370,7 @@ header {
   
     nav {
     flex-wrap: wrap;
-    padding: 2px 5px; /* minimal padding */
+    padding: 10px 5px; /* minimal padding */
   }
 
   .nav-left,
@@ -392,7 +385,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    gap: 2px; /* tiny space between links */
+    gap: 5px; /* tiny space between links */
   }
 
   .nav-center a {
