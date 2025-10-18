@@ -287,8 +287,85 @@ footer {
 
 /* ===RESPONSIVE=== */
 @media(max-width:768px){
-  .eu-funding{ position:static; margin-bottom:15px; }
-  .lang-toggle-top{ position:static; text-align:center; margin-bottom:15px; }
+	
+	header {
+    padding: 40px 12px 20px 12px;
+    position: relative;
+  }
+
+  /* EU logo – fixed top-left */
+  .eu-funding {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .eu-funding img {
+    height: 55px;
+    width: auto;
+  }
+
+  /* Language flags – fixed top-right */
+  .lang-toggle-top {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 6px;
+  }
+
+  .lang-toggle-top img {
+    width: 20px;
+    height: auto;
+  }
+
+  /* Header main content (below logos/flags) */
+  .header-container {
+    margin-top: 50px; /* ensures content doesn’t overlap logos */
+  }
+
+  /* Logo + title side by side */
+  .logo-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .project-logo {
+    width: 100px;
+    flex-shrink: 0;
+  }
+
+  .title-text {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title-text h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .title-text p {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 5px 0 0 0;
+  }
+  
+ 
+ 
   .team-members{ flex-direction:column; gap:25px; }
   .team-member{ flex-direction:column; text-align:center; align-items:center; }
   .team-member img{ margin-bottom:10px; }
@@ -304,4 +381,32 @@ footer {
     text-align: center;
   }
   
-  nav a{ display:block; margin:5px 0; }
+      nav {
+    flex-wrap: wrap;
+    padding: 10px 5px; /* minimal padding */
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    margin-bottom: 3px; /* small spacing */
+    text-align: center;
+  }
+
+  .nav-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 5px; /* tiny space between links */
+  }
+
+  .nav-center a {
+    flex: 1 1 30%;       /* 3 items per row */
+    max-width: 30%;      /* constrain width */
+    margin: 1px 1px;     /* minimal spacing between links */
+    padding: 3px 2px;    /* small padding inside links */
+    font-size: 1.0rem;   /* smaller text */
+    line-height: 1.1;    /* tighter lines */
+    text-align: center;
+  }
