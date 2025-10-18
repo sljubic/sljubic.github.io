@@ -269,8 +269,113 @@ footer {
 
 /* ===RESPONSIVE=== */
 @media(max-width:768px){
-  .eu-funding{ position:static; margin-bottom:15px; }
-  .lang-toggle-top{ position:static; text-align:center; margin-bottom:15px; }
+header {
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    position: relative;
+    width: 100%;
+  }
+  
+  
+
+  /* Top row: UNIRI logos left, flags right */
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .uniri-logo-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: static; /* remove desktop absolute */
+  }
+
+  .uniri-logo,
+  .uniri-emblem {
+    height: 45px;
+    width: auto;
+  }
+
+  .lang-toggle-top {
+    display: flex;
+    gap: 5px;
+    position: static; /* remove desktop absolute */
+  }
+
+  .lang-toggle-top button img {
+    width: 20px;
+    height: auto;
+  }
+
+  /* Project logo + title */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* align left for row layout */
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+
+
+  /* Optional: reduce header bottom spacing */
+  header, .header-container, .logo-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  
+  
+  .logo-title {
+    display: flex;
+    flex-direction: row;       
+    align-items: center;       /* vertically center title relative to logo */
+    gap: 10px;
+    width: 100%;
+    padding: 5px 10px 20px 10px;           /* add 10px space on left and right */
+    box-sizing: border-box;    /* include padding in width calculation */
+  }
+  
+ 
+  .project-logo {
+    flex: 0 0 80px;            /* fixed logo width */
+    height: auto;
+  }
+
+
+  .title-text {
+    flex: 1 1 auto;            /* take remaining space */
+    max-width: calc(100% - 80px - 10px); /* remaining width next to logo */
+  }
+
+  .title-text p {
+    margin: 0;
+    font-size: 1.3rem;         /* smaller font for mobile */
+    line-height: 1.1;
+    text-align: left;
+    word-break: break-word;     /* allow wrapping */
+    overflow-wrap: break-word;
+  }
+
+
+  .title-text br {
+    display: none;          /* remove desktop <br> */
+  }
+  
+  
+  
+  
+  
+
+ 
+
+  
+
   .team-members{ flex-direction:column; gap:25px; }
   .team-member{ flex-direction:column; text-align:center; align-items:center; }
   .team-member img{ margin-bottom:10px; }
@@ -306,12 +411,7 @@ footer {
     line-height: 1.1;    /* tighter lines */
     text-align: center;
   }
-  
-  .title-text p {
-  font-size: 1.2rem;
-  line-height: 1.3;
-  color: #ffe1c4;
-}
+
   
 }
 
