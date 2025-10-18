@@ -276,14 +276,42 @@ footer {
   .team-member img{ margin-bottom:10px; }
   .footer-logo { position: static; transform: none; display: block; margin: 0 auto 10px auto; }
   footer { text-align: center; }
-  nav a{ display:block; margin:5px 0; }
-  .about-content {
-    flex-direction: column;
+  
+    nav {
+    flex-wrap: wrap;
+    padding: 2px 5px; /* minimal padding */
   }
-  .about-image-left {
-    margin-right: 0;
-    margin-bottom: 20px;
+
+  .nav-left,
+  .nav-right {
     width: 100%;
+    margin-bottom: 3px; /* small spacing */
+    text-align: center;
   }
+
+  .nav-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 2px; /* tiny space between links */
+  }
+
+  .nav-center a {
+    flex: 1 1 30%;       /* 3 items per row */
+    max-width: 30%;      /* constrain width */
+    margin: 1px 1px;     /* minimal spacing between links */
+    padding: 3px 2px;    /* small padding inside links */
+    font-size: 1.0rem;   /* smaller text */
+    line-height: 1.1;    /* tighter lines */
+    text-align: center;
+  }
+  
+  .title-text p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #ffe1c4;
+}
+  
 }
 
