@@ -522,12 +522,12 @@ height: 25px;
 }
 
 .icon-crosbi {
-    background: url("images/crosbi-bw.png") no-repeat scroll 0% 0% transparent;
+    background: url("images/croris-bw.png") no-repeat scroll 0% 0% transparent;
 	height: 35px;
-	width: 16px;
+	width: 25px;
 }
 .icon-crosbi:hover {
-    background: url("images/crosbi-color.png") no-repeat scroll 0% 0% transparent;
+    background: url("images/croris-color.png") no-repeat scroll 0% 0% transparent;
 }
 
 .icon-uniri {
